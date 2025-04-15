@@ -1,0 +1,50 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // Firebase integration
+}
+
+android {
+    namespace = "com.example.stockmarketflutter"
+    compileSdk = 34 // Change this to 33 for SDK version 33
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.stockmarketflutter"
+        minSdk = 23  // Minimum SDK can stay as 23 for Firebase Auth compatibility
+        targetSdk = 34  // Change this to 33 for SDK version 33
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    // Enable BuildConfig Fields for Firebase Auth
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.1.1') // Use Firebase BOM
+    implementation 'com.google.firebase:firebase-auth'  // Firebase Auth
+    implementation 'com.google.firebase:firebase-analytics' // Example: Firebase Analytics
+}

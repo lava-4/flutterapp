@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "943098668014",
+    "firebase_url": "https://loginretrofit-503c8-default-rtdb.firebaseio.com",
+    "project_id": "loginretrofit-503c8",
+    "storage_bucket": "loginretrofit-503c8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943098668014:android:e628e147c3caa2a5c1e4ff",
+        "android_client_info": {
+          "package_name": "com.example.stockmarketflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943098668014-npfbdtajdmqeebv9uvlp2525inf651u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-ytgFccI4jyxOQfvjHqiUjNcYIxtlYck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943098668014-npfbdtajdmqeebv9uvlp2525inf651u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
